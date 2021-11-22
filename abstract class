@@ -1,0 +1,32 @@
+//program using abstract class
+using System;
+
+namespace classes
+{
+    abstract class Animal
+    {
+        public abstract void sound();
+        public void species()
+        {
+            Console.WriteLine("herbivors");
+
+        }
+
+    }
+    class Pig : Animal
+    {
+        public override void sound()
+        {
+            Console.WriteLine("pig says : wee wee");
+        }
+    }
+    class Program 
+    {
+        static void Main(string[] args)
+        {
+            Pig i = new Pig();
+            i.sound();
+            i.species();
+        }
+    }
+}
