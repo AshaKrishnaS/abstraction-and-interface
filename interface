@@ -1,0 +1,28 @@
+//a simple interface
+using System;
+
+namespace interfaces
+
+{
+interface  Ianimal
+    {
+        void sound();
+        
+    }
+    class pig : Ianimal
+    {
+        public void sound()
+        {
+            Console.WriteLine(" the pig sounds : wee wee");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            pig p = new pig();
+            p.sound();
+
+        }
+    }
+}
